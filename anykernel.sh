@@ -7,7 +7,6 @@ properties() { '
 kernel.string=Nebula
 kernel.compiler=
 kernel.made=
-kernel.version=
 message.word=
 do.devicecheck=1
 do.cleanup=1
