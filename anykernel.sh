@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=McQuaid NetHunter
+kernel.string=McQuaid NetHunter Legacy
 kernel.compiler=GCC EVA
 kernel.made=TogoFire
-message.word=Join @TogoFireChannel & @McQuaidKernel
+message.word=Join @TogoFireChannel & @McQuaidKernel - To old fw. FW 14.0.0.202/212 or 13.x
 do.devicecheck=1
 do.modules=0
 do.systemless=1
