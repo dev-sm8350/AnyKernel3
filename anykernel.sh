@@ -5,7 +5,7 @@
 # global properties
 properties() { '
 kernel.string=McQuaid NetHunter
-kernel.compiler=WeebX Clang
+kernel.compiler=GCC EVA
 kernel.made=TogoFire
 message.word=Join @TogoFireChannel & @McQuaidKernel
 do.devicecheck=1
