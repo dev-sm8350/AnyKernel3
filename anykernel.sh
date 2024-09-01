@@ -50,6 +50,9 @@ patch_cmdline "skip_override" "";
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 
+# dtbo install
+erase_dtbo;
+## end of dtbo install
 
 ## init_boot files attributes
 #init_boot_attributes() {
