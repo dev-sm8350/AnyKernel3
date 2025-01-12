@@ -9,15 +9,9 @@ kernel.compiler=
 kernel.made=
 message.word=
 do.devicecheck=1
-do.modules=0
-do.systemless=1
 do.cleanup=1
-do.cleanuponabort=0
 device.name1=veux
 device.name2=peux
-supported.versions=
-supported.patchlevels=
-supported.vendorpatchlevels=
 '; } # end properties
 
 ### AnyKernel install
