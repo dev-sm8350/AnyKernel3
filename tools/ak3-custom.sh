@@ -17,13 +17,6 @@ check_ksu() {
   fi;
 }
 
-check_twrp() {
-  if [ -e $AKHOME/TWRP_LOCK ]; then
-    ui_print " " "TWRP will be disabled.";
-    sed -i '$ s/$/ ignore_builtin_recovery/' $SPLITIMG/header;
-  fi;
-}
-
 check_vendor_hals() {
   grep -q "/vendor " /proc/mounts || mount /vendor;
   if [ $? -eq 0 ]; then
