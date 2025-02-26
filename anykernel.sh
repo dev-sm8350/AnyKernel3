@@ -25,6 +25,9 @@ NO_BLOCK_DISPLAY=1;
 # boot install
 split_boot;
 
+ui_print " " "Flashing KernelSU version...";
+ui_print "This is not secure!";
+
 flash_boot;
 ## end boot install
 
