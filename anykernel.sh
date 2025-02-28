@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
-message.word=
+kernel.string=Nebula
+kernel.compiler=WeebX Clang
+kernel.made=Frost
+message.word=Join @frosty_builds & @TogoFireWork
 do.devicecheck=1
 do.modules=0
 do.systemless=1
