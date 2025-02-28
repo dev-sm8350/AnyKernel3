@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Nebula
+kernel.string=Nebula KSU
 kernel.compiler=WeebX Clang
 kernel.made=Frost
 message.word=Join @frosty_builds & @TogoFireWork

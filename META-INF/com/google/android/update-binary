@@ -578,6 +578,7 @@ do_vendorlevelcheck;
 
 ui_print " ";
 ui_print "Flashing $KERNEL_STRING Kernel...";
+ui_print "This is not secure!";
 # hack to maintain support for anykernel.sh files that weren't updated correctly along with the AK core
 CORE=$(grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
