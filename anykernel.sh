@@ -37,10 +37,6 @@ patch_cmdline "skip_override" "";
 flash_boot;
 ## end boot install
 
-# dtbo install
-erase_dtbo;
-## end of dtbo install
-
 # vendor_boot shell variables
 BLOCK=vendor_boot;
 
