@@ -1,5 +1,6 @@
 ### AnyKernel custom methods
 ## dereference23@github.com
+## Karan-Frost@github.com
 
 check_cmdline() {
   if [ -f $AKHOME/cmdline ]; then
@@ -11,10 +12,10 @@ check_cmdline() {
 check_vendor_hals() {
   grep -q "/vendor " /proc/mounts || mount /vendor;
   if [ $? -eq 0 ]; then
-    if grep -qs is_miuicamera_app /vendor/lib/hw/audio.primary.*.so; then
-      ui_print " " "Stock Audio HAL detected.";
-      fdtput $AKHOME/dtb /soc/qcom,msm-audio-apr/qcom,q6core-audio/sound qcom,aw88261-model -d;
-      fdtput $AKHOME/dtb /soc/qcom,msm-audio-apr/qcom,q6core-audio/sound qcom,fs1962-model -d;
+    if ! grep -qs is_miuicamera_app /vendor/lib/hw/audio.primary.*.so; then
+      ui_print " " "OSS Audio HAL detected.";
+      fdtput $AKHOME/dtb /soc/qcom,msm-audio-apr/qcom,q6core-audio/sound qcom,aw88261-model = "holi-qrd-snd-card";
+      fdtput $AKHOME/dtb /soc/qcom,msm-audio-apr/qcom,q6core-audio/sound qcom,fs1962-model = "holi-qrdsku1-snd-card";
       dtb_patched=1;
     fi;
     if grep -qs displayfeature /vendor/bin/hw/vendor.qti.hardware.display.composer-service; then
